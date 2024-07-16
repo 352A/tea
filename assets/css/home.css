@@ -1,0 +1,213 @@
+/* input  */
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem white !important; /* Change the color and shadow as desired */
+}
+
+input:focus {
+  border-color: var(--main-color) !important; /* Change this color as desired */
+}
+
+textarea:focus {
+  border-color: var(
+    --primary-color
+  ) !important; /* Change this color as desired */
+}
+
+select:focus {
+  border-color: var(
+    --primary-color
+  ) !important; /* Change this color as desired */
+}
+
+/* support button */
+
+.support-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.support-button button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.support-button button:hover {
+  background-color: #0056b3;
+}
+
+/* products categories */
+
+.products .card {
+  cursor: pointer;
+}
+
+.products .card img {
+  height: 7rem;
+  object-fit: contain;
+  transition: all 0.7s ease-in-out;
+}
+
+.products .card img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.products .card h6 {
+  text-align: center;
+}
+
+/* carousel */
+
+.carousel-item:nth-child(3) img {
+  height: 80vh;
+  object-fit: cover;
+
+  object-position: 0% 65%;
+}
+
+.carousel-item:nth-child(1) img,
+.carousel-item:nth-child(2) img {
+  height: 80vh;
+  object-fit: cover;
+  object-position: 10% 60%;
+}
+
+.carousel-item:nth-child(4) img {
+  height: 80vh;
+  object-fit: cover;
+  object-position: 10% 65%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 15%;
+}
+
+.carousel-caption h5 {
+  color: black;
+  font-size: 3.2rem;
+}
+
+.carousel-caption p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+/* promotion section */
+
+.promotion div {
+  transform: translate(-50px, -25px);
+}
+
+.promotion:hover .circle {
+  transform: scale(0.7) translateX(-50px);
+  color: white;
+}
+
+.promotion img,
+.promotion .circle {
+  transform: scale(1);
+  transition: all 3s ease-in-out;
+}
+
+.promotion:hover img {
+  transform: scale(1.2) rotate(5deg) translateX(20px);
+}
+
+/* fitered products */
+@media screen and (min-width: 780px) {
+  .filtered-products .span-two {
+    height: 77% !important;
+  }
+}
+
+.filtered-products .card {
+  height: 35vh;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.filtered-products .card:hover {
+  transform: scale(1.05);
+}
+
+.filtered-products .card .first-img {
+  filter: opacity(1);
+  object-fit: contain;
+  height: 100%;
+}
+
+.filtered-products .card img {
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(0.7);
+  transition: filter 0.3s ease;
+}
+
+.filtered-products .card:hover img {
+  filter: opacity(1);
+}
+
+.filtered-products .card .card-img-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.filtered-products .card .card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.filtered-products .card .card-img-overlay h4 {
+  margin: 0;
+}
+
+.filtered-products .card.text-bg-warning {
+  background-color: #ffc107;
+}
+
+.filtered-products .card.text-bg-light {
+  background-color: #f8f9fa;
+}
+
+.filtered-products .card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 786px) {
+  .carousel-item:nth-child(1) img,
+  .carousel-item:nth-child(2) img {
+    height: 80vh;
+    object-fit: cover;
+    object-position: 90% 60%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+    text-align: left;
+  }
+}

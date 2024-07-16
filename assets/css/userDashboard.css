@@ -1,0 +1,37 @@
+.sidebar li {
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.sidebar li:hover {
+  box-shadow: 1px 2px 3px #aaa;
+  transform: scale(1.05);
+}
+
+.sidebar li:active {
+  background-color: white !important;
+  color: #2d4d5c !important;
+}
+
+#address-cards {
+  max-height: 300px; /* Adjust this value as needed */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+/* orders */
+
+#orders-card img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: 65%;
+}
+
+/* sidebar */
+
+.sidebar h6:hover {
+  background-color: #eee;
+}
