@@ -108,10 +108,10 @@ select:focus {
   .carousel-caption h5 {
     color: black;
     font-size: 2.4rem !important;
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
   .carousel-caption p {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 
