@@ -107,13 +107,13 @@ select:focus {
 @media screen and (max-width: 480px) {
   .carousel-caption h5 {
     color: black;
-    font-size: 2.4rem !important;
+    font-size: 2.5rem !important;
     transform: translateY(-20px);
-    transform: translateX(5px);
+    transform: translateX(-5px);
   }
   .carousel-caption p {
     transform: translateY(-20px);
-    transform: translateX(5px);
+    transform: translateX(-5px);
   }
 }
 
